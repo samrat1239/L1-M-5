@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>post card</title>
+    <style>
+        #post_container{
+            max-width: 1160px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+            row-gap: 50px;
+
+        }
+
+        .post-card{
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px gray;
+            height: 100%;
+
+        }
+
+        .post-card li{
+            text-align: justify;
+        }
+
+    </style>
+  </head>
+  <body>
+     <button onclick="postCard()">post card</button>
+    <div id="post_container">
+    </div>
+   
+
+    <script src="postcard.js"></script>
+  </body>
+</html>
